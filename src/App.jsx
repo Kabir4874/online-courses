@@ -1,13 +1,13 @@
 import { Route, Routes } from "react-router-dom";
-import HomePage from "./pages/HomePage";
-import CoursesPage from "./pages/CoursesPage";
 import AboutUsPage from "./pages/AboutUsPage";
-import PricingPage from "./pages/PricingPage";
 import ContactPage from "./pages/ContactPage";
+import CoursesPage from "./pages/CoursesPage";
+import HomePage from "./pages/HomePage";
+import PricingPage from "./pages/PricingPage";
 
 function App() {
   return (
-    <div>
+    <div className=" overflow-x-hidden">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/courses" element={<CoursesPage />} />

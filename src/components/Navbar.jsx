@@ -10,7 +10,7 @@ const Navbar = () => {
       setMenu(false);
     } else {
       setRight("-right-[100%]");
-      setMenu(true); 
+      setMenu(true);
     }
   }
   return (
@@ -20,19 +20,21 @@ const Navbar = () => {
           <img src="/src/assets/Logo.png" className=" w-full" />
         </div>
         <div
-          className={`flex flex-col gap-8 bg-white absolute w-[10rem] top-20 -mt-2 ${right} px-4 py-4 h-screen transition-all duration-500`}
+          className={`flex flex-col gap-8 bg-white absolute w-[12rem] top-20 -mt-2 ${right} px-4 py-4 h-screen transition-all duration-500`}
         >
-          <NavLink to={'/'} className={" text-gray15 text-lg leading-6"}>Home</NavLink>
-          <NavLink to={'/courses'} className={" text-gray15 text-lg leading-6"}>
+          <NavLink to={"/"} className={" text-gray15 text-lg leading-6"}>
+            Home
+          </NavLink>
+          <NavLink to={"/courses"} className={" text-gray15 text-lg leading-6"}>
             Courses
           </NavLink>
-          <NavLink to={'/about'} className={" text-gray15 text-lg leading-6"}>
+          <NavLink to={"/about"} className={" text-gray15 text-lg leading-6"}>
             About Us
           </NavLink>
-          <NavLink to={'/pricing'} className={" text-gray15 text-lg leading-6"}>
+          <NavLink to={"/pricing"} className={" text-gray15 text-lg leading-6"}>
             Pricing
           </NavLink>
-          <NavLink to={'/contact'} className={" text-gray15 text-lg leading-6"}>
+          <NavLink to={"/contact"} className={" text-gray15 text-lg leading-6"}>
             Contact
           </NavLink>
         </div>
