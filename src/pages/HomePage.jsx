@@ -1,5 +1,9 @@
 import Navbar from "../components/Navbar";
+import OrangeButton from "../components/OrangeButton";
+import SectionHeading from "../components/SectionHeading";
 import TopOffer from "../components/TopOffer";
+import WhiteButton from "../components/WhiteButton";
+import { benefitData, courses } from "../data/homePageData";
 
 const HomePage = () => {
   return (
@@ -10,25 +14,105 @@ const HomePage = () => {
       <div>
         <Navbar />
       </div>
+
+      {/* Header  */}
+
       <div className=" mt-[3.12rem]">
-        <div>
-          <div className=" flex p-[.875rem]">
-            <div>
+        <div className=" flex flex-col items-center self-stretch">
+          <div className=" flex p-[.875rem] justify-center items-center content-center gap-3 self-stretch flex-wrap rounded-lg border border-white95 bg-white99">
+            <div className=" relative">
               <img src="/src/assets/Icon Container.png" />
-              <img src="/src/assets/Abstract Line.png" />
+              <img
+                src="/src/assets/Abstract Line.png"
+                className=" absolute -top-5 -left-5"
+              />
             </div>
-            <h2>
-              <span>Unlock</span> Your Creative Potential
+            <h2 className=" font-semibold leading-6 text-gray10">
+              <span className=" text-orange50">Unlock</span> Your Creative
+              Potential
             </h2>
           </div>
-          <div>
-            <h1>with Online Design and Development Courses.</h1>
-            <p>Learn from Industry Experts and Enhance Your Skills.</p>
+          <div className="flex flex-col gap-[.375rem] self-stretch items-center px-7 mt-4">
+            <h1 className=" text-gray15 text-center text-2xl font-medium leading-9">
+              with Online Design and Development Courses.
+            </h1>
+            <p className=" text-medium text-gray15 text-center leading-6">
+              Learn from Industry Experts and Enhance Your Skills.
+            </p>
           </div>
-          <div>
-            <button>Explore Courses</button>
-            <button>View Pricing</button>
+          <div className=" mt-12 flex gap-3 mx-auto items-center">
+            <OrangeButton btn={"Explore Courses"} />
+            <WhiteButton btn={"View Pricing"} />
           </div>
+        </div>
+      </div>
+
+      {/* Card  */}
+
+      <div className=" grid grid-cols-3 p-[.625rem] rounded-lg border border-white95 bg-white99 mt-7">
+        <div className=" flex items-center justify-center py-5 px-7 border-r-2">
+          <img src="/src/assets/zapier.png" />
+        </div>
+        <div className=" flex items-center justify-center py-5 px-7 border-r-2">
+          <img src="/src/assets/spotify.png" />
+        </div>
+        <div className=" flex items-center justify-center py-5 px-7">
+          <img src="/src/assets/zoom.png" />
+        </div>
+      </div>
+      {/* CTA Video  */}
+      <div className=" w-full mt-[1.88rem] cursor-pointer">
+        <img src="/src/assets/Container.png" className=" w-full" />
+      </div>
+      {/* Benefits  */}
+      <div>
+        <SectionHeading
+          heading={"Benefits"}
+          subHeading={
+            "Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in."
+          }
+        />
+        <div>
+          {benefitData.map((item) => {
+            return (
+              <div
+                key={item.number}
+                className="flex flex-col p-[1.875rem] items-end gap-[1.875rem] self-stretch rounded-xl bg-white mb-5"
+              >
+                <h1 className=" self-stretch text-gray15 text-right text-5xl font-bold">
+                  {item.number}
+                </h1>
+                <div className=" self-start">
+                  <h2 className=" text-gray20 text-xl font-semibold mb-[.62rem]">
+                    {item.heading}
+                  </h2>
+                  <p className=" text-gray30 font-medium">{item.para}</p>
+                </div>
+                <div className=" cursor-pointer">
+                  <img src="/src/assets/Button.png" />
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Our Courses  */}
+
+      <div>
+        <SectionHeading heading={'Our Courses'} subHeading={'Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.'}/>
+        <div>
+          {
+            courses.map((item)=>{
+              return (
+                <div key={item.id}>
+                  <div>
+                    <img src={item.image}/>
+                  </div>
+                </div>
+              )
+            })
+          }
         </div>
       </div>
     </div>
