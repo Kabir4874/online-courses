@@ -93,3 +93,31 @@ export const courses = [
       "Take your JavaScript skills to the next level. Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6 features. Build complex applications with confidence.",
   },
 ];
+
+export const testimonials = [
+  {
+    id: 1,
+    image: "/src/assets/person1.png",
+    name: "Sarah L",
+    description:
+      "The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!",
+  },
+  {
+    id: 2,
+    image: "/src/assets/person2.png",
+    name: "Jason M",
+    description: `The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!`,
+  },
+  {
+    id: 3,
+    image: "/src/assets/person3.png",
+    name: "Emily R",
+    description: `The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!`,
+  },
+  {
+    id: 4,
+    image: "/src/assets/person4.png",
+    name: "Michael K",
+    description: `I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!`,
+  },
+];

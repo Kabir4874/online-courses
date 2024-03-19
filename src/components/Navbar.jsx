@@ -20,7 +20,7 @@ const Navbar = () => {
           <img src="/src/assets/Logo.png" className=" w-full" />
         </div>
         <div
-          className={`flex flex-col gap-8 bg-white absolute w-[12rem] top-20 -mt-2 ${right} px-4 py-4 h-screen transition-all duration-500`}
+          className={`flex flex-col gap-8 bg-white absolute w-[12rem] top-20 -mt-2 ${right} px-4 py-4 h-screen transition-all duration-500 z-10`}
         >
           <NavLink to={"/"} className={" text-gray15 text-lg leading-6"}>
             Home
