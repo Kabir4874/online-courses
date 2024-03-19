@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -24,8 +21,10 @@ export default {
         white30: "#FFFFFF4D",
         white20: "#FFFFFF33",
       },
+      fontSize: {
+        medium: "0.875rem",
+      },
     },
   },
   plugins: [],
-}
-
+};
