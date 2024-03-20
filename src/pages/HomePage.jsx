@@ -228,56 +228,77 @@ const HomePage = () => {
                     Available Features
                   </h3>
                   <div className=" flex p-3 items-start gap-2 rounded-md border border-white95 w-full">
-                    <div>
-                      <img src="/src/assets/tik button.png" />
+                    <div className=" w-6">
+                      <img
+                        src="/src/assets/tik button.png"
+                        className=" w-full"
+                      />
                     </div>
                     <p className=" text-gray30 text-medium">
                       Access to selected free courses.
                     </p>
                   </div>
                   <div className=" flex p-3 items-start gap-2 rounded-md border border-white95 w-full">
-                    <div>
-                      <img src="/src/assets/tik button.png" />
+                    <div className=" w-6">
+                      <img
+                        src="/src/assets/tik button.png"
+                        className=" w-full"
+                      />
                     </div>
                     <p className=" text-gray30 text-medium">
                       Limited course materials and resources.
                     </p>
                   </div>
                   <div className=" flex p-3 items-start gap-2 rounded-md border border-white95 w-full">
-                    <div>
-                      <img src="/src/assets/tik button.png" />
+                    <div className=" w-6">
+                      <img
+                        src="/src/assets/tik button.png"
+                        className=" w-full"
+                      />
                     </div>
                     <p className=" text-gray30 text-medium">
                       Basic community support.
                     </p>
                   </div>
                   <div className=" flex p-3 items-start gap-2 rounded-md border border-white95 w-full">
-                    <div>
-                      <img src="/src/assets/tik button.png" />
+                    <div className=" w-6">
+                      <img
+                        src="/src/assets/tik button.png"
+                        className=" w-full"
+                      />
                     </div>
                     <p className=" text-gray30 text-medium">
                       No certification upon completion.
                     </p>
                   </div>
                   <div className=" flex p-3 items-start gap-2 rounded-md border border-white95 w-full">
-                    <div>
-                      <img src="/src/assets/tik button.png" />
+                    <div className=" w-6">
+                      <img
+                        src="/src/assets/tik button.png"
+                        className=" w-full"
+                      />
                     </div>
                     <p className=" text-gray30 text-medium">
                       Ad-supported platform.
                     </p>
                   </div>
                   <div className=" flex p-3 items-start gap-2 rounded-md border border-white95 w-full">
-                    <div>
-                      <img src="/src/assets/price-cross.png" />
+                    <div className=" w-6">
+                      <img
+                        src="/src/assets/price-cross.png"
+                        className=" w-full"
+                      />
                     </div>
                     <p className=" text-gray30 text-medium">
                       Access to exclusive Pro Plan community forums.
                     </p>
                   </div>
                   <div className=" flex p-3 items-start gap-2 rounded-md border border-white95 w-full">
-                    <div>
-                      <img src="/src/assets/price-cross.png" />
+                    <div className=" w-6">
+                      <img
+                        src="/src/assets/price-cross.png"
+                        className=" w-full"
+                      />
                     </div>
                     <p className=" text-gray30 text-medium">
                       Early access to new courses and updates.
@@ -310,56 +331,77 @@ const HomePage = () => {
                     Available Features
                   </h3>
                   <div className=" flex p-3 items-start gap-2 rounded-md border border-white95 w-full">
-                    <div>
-                      <img src="/src/assets/tik button.png" />
+                    <div className=" w-6">
+                      <img
+                        src="/src/assets/tik button.png"
+                        className=" w-full"
+                      />
                     </div>
                     <p className=" text-gray30 text-medium">
                       Unlimited access to all courses.
                     </p>
                   </div>
                   <div className=" flex p-3 items-start gap-2 rounded-md border border-white95 w-full">
-                    <div>
-                      <img src="/src/assets/tik button.png" />
+                    <div className=" w-6">
+                      <img
+                        src="/src/assets/tik button.png"
+                        className=" w-full"
+                      />
                     </div>
                     <p className=" text-gray30 text-medium">
                       Unlimited course materials and resources.
                     </p>
                   </div>
                   <div className=" flex p-3 items-start gap-2 rounded-md border border-white95 w-full">
-                    <div>
-                      <img src="/src/assets/tik button.png" />
+                    <div className=" w-6">
+                      <img
+                        src="/src/assets/tik button.png"
+                        className=" w-full"
+                      />
                     </div>
                     <p className=" text-gray30 text-medium">
                       Priority support from instructors.
                     </p>
                   </div>
                   <div className=" flex p-3 items-start gap-2 rounded-md border border-white95 w-full">
-                    <div>
-                      <img src="/src/assets/tik button.png" />
+                    <div className=" w-6">
+                      <img
+                        src="/src/assets/tik button.png"
+                        className=" w-full"
+                      />
                     </div>
                     <p className=" text-gray30 text-medium">
                       Course completion certificates.
                     </p>
                   </div>
                   <div className=" flex p-3 items-start gap-2 rounded-md border border-white95 w-full">
-                    <div>
-                      <img src="/src/assets/tik button.png" />
+                    <div className=" w-6">
+                      <img
+                        src="/src/assets/tik button.png"
+                        className=" w-full"
+                      />
                     </div>
                     <p className=" text-gray30 text-medium">
                       Ad-free experience.
                     </p>
                   </div>
                   <div className=" flex p-3 items-start gap-2 rounded-md border border-white95 w-full">
-                    <div>
-                      <img src="/src/assets/tik button.png" />
+                    <div className=" w-6">
+                      <img
+                        src="/src/assets/tik button.png"
+                        className=" w-full"
+                      />
                     </div>
                     <p className=" text-gray30 text-medium">
                       Access to exclusive Pro Plan community forums.
                     </p>
                   </div>
                   <div className=" flex p-3 items-start gap-2 rounded-md border border-white95 w-full">
-                    <div>
-                      <img src="/src/assets/tik button.png" />
+                    <div className=" w-6">
+                      <img
+                        src="/src/assets/tik button.png"
+                        className=" w-full"
+                      />
                     </div>
                     <p className=" text-gray30 text-medium">
                       Early access to new courses and updates.
@@ -397,13 +439,14 @@ const HomePage = () => {
                   onClick={() => toggle(i)}
                 >
                   <p className=" text-gray15 font-medium">{item.qus}</p>
-                  <button>
+                  <button className=" w-10">
                     <img
                       src={`${
                         Faq !== i
                           ? "/src/assets/plus button.png"
                           : "/src/assets/cross button.png"
                       }`}
+                      className=" w-full"
                     />
                   </button>
                 </div>

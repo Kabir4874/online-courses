@@ -2,8 +2,8 @@ const Footer = () => {
   return (
     <div className=" flex flex-col items-start gap-5 pt-14 pb-6 px-5 bg-white mt-14 w-screen -ml-4">
       <div className=" flex flex-col items-start gap-7 self-stretch">
-        <div>
-          <img src="/src/assets/Logo.png" />
+        <div className=" w-11">
+          <img src="/src/assets/Logo.png" className=" w-full"/>
         </div>
         <div className=" flex items-start content-start gap-3 self-stretch flex-wrap flex-col">
           <div className=" flex gap-2 items-center">
@@ -50,14 +50,14 @@ const Footer = () => {
       <div className="flex flex-col items-start gap-3">
         <h3 className=" text-gray15 text-lg font-semibold">Social Profiles</h3>
         <div className="flex items-start gap-4">
-          <div>
-            <img src="/src/assets/fb.png" />
+          <div className=" w-11">
+            <img src="/src/assets/fb.png" className=" w-full" />
           </div>
-          <div>
-            <img src="/src/assets/twitter.png" />
+          <div className=" w-11">
+            <img src="/src/assets/twitter.png" className=" w-full" />
           </div>
-          <div>
-            <img src="/src/assets/linkedin.png " />
+          <div className=" w-11">
+            <img src="/src/assets/linkedin.png " className=" w-full" />
           </div>
         </div>
       </div>
