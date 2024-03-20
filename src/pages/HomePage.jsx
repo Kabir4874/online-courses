@@ -71,6 +71,7 @@ const HomePage = () => {
           subHeading={
             "Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in."
           }
+          btn={'View All'}
         />
         <div>
           {benefitData.map((item) => {
@@ -105,6 +106,7 @@ const HomePage = () => {
           subHeading={
             "Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in."
           }
+          btn={'View All'}
         />
         <div className=" flex flex-col gap-5">
           {courses.map((item) => {
@@ -152,6 +154,7 @@ const HomePage = () => {
           subHeading={
             "Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in."
           }
+          btn={'View All'}
         />
         <div className="flex flex-col gap-5">
           {testimonials.map((item) => {
@@ -362,6 +365,10 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
+      {/* FAQ  */}
+
+      
     </div>
   );
 };
