@@ -15,12 +15,25 @@ const HomePage = () => {
     }
     setFaq(i);
   }
+  const [nav, setNav] = useState("");
+  const [topOffer, setTopOffer] = useState("visible");
+  window.addEventListener("scroll", () => {
+    if (scrollY > 60) {
+      setNav(
+        "bg-white px-4 fixed w-[96%] top-0 rounded-md left-[50%] translate-x-[-50%] shadow-md z-50"
+      );
+      setTopOffer("hidden");
+    } else {
+      setNav("");
+      setTopOffer("visible");
+    }
+  });
   return (
     <div className="bg-white97 px-4 mx-auto pt-10">
-      <div>
+      <div className={`${topOffer}`}>
         <TopOffer />
       </div>
-      <div>
+      <div className={`${nav} transition-all ease-in-out duration-300`}>
         <Navbar />
       </div>
 
@@ -30,7 +43,7 @@ const HomePage = () => {
         <div className=" flex flex-col items-center self-stretch">
           <div className=" flex p-[.875rem] justify-center items-center content-center gap-3 self-stretch flex-wrap rounded-lg border border-white95 bg-white99">
             <div className=" relative">
-              <img src="/src/assets/Icon Container.png" />
+              <img src="/src/assets/Icon Container.png" className=" w-12" />
               <img
                 src="/src/assets/Abstract Line.png"
                 className=" absolute -top-5 -left-5"
@@ -98,7 +111,7 @@ const HomePage = () => {
                   </h2>
                   <p className=" text-gray30 font-medium">{item.para}</p>
                 </div>
-                <div className=" cursor-pointer">
+                <div className=" cursor-pointer w-[3.375rem]">
                   <img src="/src/assets/Button.png" />
                 </div>
               </div>
@@ -174,7 +187,7 @@ const HomePage = () => {
                 </div>
                 <div className="flex items-center justify-between py-5 px-8 bg-white99 border-t rounded-b-2xl">
                   <div className="flex items-center gap-[.625rem]">
-                    <img src={item.image} />
+                    <img src={item.image} className=" w-[3.125rem]" />
                     <h2 className=" text-gray20 font-semibold">{item.name}</h2>
                   </div>
                   <button className=" py-[.875rem] px-4 rounded-md border border-white95 bg-white97">
