@@ -165,7 +165,9 @@ const HomePage = () => {
                     <img src={item.image} />
                     <h2 className=" text-gray20 font-semibold">{item.name}</h2>
                   </div>
-                  <button className=" py-[.875rem] px-4 rounded-md border border-white95 bg-white97">Read Full Story</button>
+                  <button className=" py-[.875rem] px-4 rounded-md border border-white95 bg-white97">
+                    Read Full Story
+                  </button>
                 </div>
               </div>
             );
@@ -175,14 +177,188 @@ const HomePage = () => {
 
       {/* Our Pricing  */}
       <div>
-        <div>
+        <div className=" mt-[3.13rem] flex flex-col gap-5 mb-10">
           <div>
-            <h1>Our Pricing</h1>
-            <p>Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</p>
+            <h1 className=" self-stretch text-gray15 text-3xl font-semibold mb-1">
+              Our Pricing
+            </h1>
+            <p className=" self-stretch text-gray35 text-medium ">
+              Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam
+              eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac
+              cum eget habitasse in velit fringilla feugiat senectus in.
+            </p>
           </div>
-          <div>
-            <button>Monthly</button>
-            <button>Yearly</button>
+          <div className=" p-3 flex items-center rounded-lg bg-white mx-auto">
+            <button className=" py-3 px-6 rounded-md bg-orange50 text-white text-medium font-medium">
+              Monthly
+            </button>
+            <button className=" py-3 px-6 rounded-md bg-white text-gray30 text-medium font-medium">
+              Yearly
+            </button>
+          </div>
+        </div>
+        <div>
+          {/* Free Plan  */}
+          <div className=" p-5 rounded-xl bg-white">
+            <div className=" flex flex-col items-center gap-7 self-stretch pt-7 pb-5 px-5 rounded-xl border border-white95 bg-white99">
+              <span className=" py-2 px-5 rounded border border-orange90 bg-orange97 w-full text-center text-gray15 font-medium">
+                Free Plan
+              </span>
+              <h1 className=" text-gray15 text-[3.125rem] font-semibold">
+                $0
+                <span className=" text-gray30 text-medium font-medium">
+                  /month
+                </span>
+              </h1>
+              <div className=" w-full">
+                <div className=" flex flex-col p-5 items-center gap-5 rounded-t-lg border border-white95 bg-white self-stretch">
+                  <h3 className=" text-gray15 text-xl font-medium">
+                    Available Features
+                  </h3>
+                  <div className=" flex p-3 items-start gap-2 rounded-md border border-white95 w-full">
+                    <div>
+                      <img src="/src/assets/tik button.png" />
+                    </div>
+                    <p className=" text-gray30 text-medium">
+                      Access to selected free courses.
+                    </p>
+                  </div>
+                  <div className=" flex p-3 items-start gap-2 rounded-md border border-white95 w-full">
+                    <div>
+                      <img src="/src/assets/tik button.png" />
+                    </div>
+                    <p className=" text-gray30 text-medium">
+                      Limited course materials and resources.
+                    </p>
+                  </div>
+                  <div className=" flex p-3 items-start gap-2 rounded-md border border-white95 w-full">
+                    <div>
+                      <img src="/src/assets/tik button.png" />
+                    </div>
+                    <p className=" text-gray30 text-medium">
+                      Basic community support.
+                    </p>
+                  </div>
+                  <div className=" flex p-3 items-start gap-2 rounded-md border border-white95 w-full">
+                    <div>
+                      <img src="/src/assets/tik button.png" />
+                    </div>
+                    <p className=" text-gray30 text-medium">
+                      No certification upon completion.
+                    </p>
+                  </div>
+                  <div className=" flex p-3 items-start gap-2 rounded-md border border-white95 w-full">
+                    <div>
+                      <img src="/src/assets/tik button.png" />
+                    </div>
+                    <p className=" text-gray30 text-medium">
+                      Ad-supported platform.
+                    </p>
+                  </div>
+                  <div className=" flex p-3 items-start gap-2 rounded-md border border-white95 w-full">
+                    <div>
+                      <img src="/src/assets/price-cross.png" />
+                    </div>
+                    <p className=" text-gray30 text-medium">
+                      Access to exclusive Pro Plan community forums.
+                    </p>
+                  </div>
+                  <div className=" flex p-3 items-start gap-2 rounded-md border border-white95 w-full">
+                    <div>
+                      <img src="/src/assets/price-cross.png" />
+                    </div>
+                    <p className=" text-gray30 text-medium">
+                      Early access to new courses and updates.
+                    </p>
+                  </div>
+                </div>
+                <button className=" py-5 px-6 rounded-b-lg bg-orange50 text-white w-full text-medium font-semibold">
+                  Get Started
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Pro Plan  */}
+
+          <div className=" p-5 rounded-xl bg-white">
+            <div className=" flex flex-col items-center gap-7 self-stretch pt-7 pb-5 px-5 rounded-xl border border-white95 bg-white99">
+              <span className=" py-2 px-5 rounded border border-orange90 bg-orange97 w-full text-center text-gray15 font-medium">
+                Pro Plan
+              </span>
+              <h1 className=" text-gray15 text-[3.125rem] font-semibold">
+                $79
+                <span className=" text-gray30 text-medium font-medium">
+                  /month
+                </span>
+              </h1>
+              <div className=" w-full">
+                <div className=" flex flex-col p-5 items-center gap-5 rounded-t-lg border border-white95 bg-white self-stretch">
+                  <h3 className=" text-gray15 text-xl font-medium">
+                    Available Features
+                  </h3>
+                  <div className=" flex p-3 items-start gap-2 rounded-md border border-white95 w-full">
+                    <div>
+                      <img src="/src/assets/tik button.png" />
+                    </div>
+                    <p className=" text-gray30 text-medium">
+                      Unlimited access to all courses.
+                    </p>
+                  </div>
+                  <div className=" flex p-3 items-start gap-2 rounded-md border border-white95 w-full">
+                    <div>
+                      <img src="/src/assets/tik button.png" />
+                    </div>
+                    <p className=" text-gray30 text-medium">
+                      Unlimited course materials and resources.
+                    </p>
+                  </div>
+                  <div className=" flex p-3 items-start gap-2 rounded-md border border-white95 w-full">
+                    <div>
+                      <img src="/src/assets/tik button.png" />
+                    </div>
+                    <p className=" text-gray30 text-medium">
+                      Priority support from instructors.
+                    </p>
+                  </div>
+                  <div className=" flex p-3 items-start gap-2 rounded-md border border-white95 w-full">
+                    <div>
+                      <img src="/src/assets/tik button.png" />
+                    </div>
+                    <p className=" text-gray30 text-medium">
+                      Course completion certificates.
+                    </p>
+                  </div>
+                  <div className=" flex p-3 items-start gap-2 rounded-md border border-white95 w-full">
+                    <div>
+                      <img src="/src/assets/tik button.png" />
+                    </div>
+                    <p className=" text-gray30 text-medium">
+                      Ad-free experience.
+                    </p>
+                  </div>
+                  <div className=" flex p-3 items-start gap-2 rounded-md border border-white95 w-full">
+                    <div>
+                      <img src="/src/assets/tik button.png" />
+                    </div>
+                    <p className=" text-gray30 text-medium">
+                      Access to exclusive Pro Plan community forums.
+                    </p>
+                  </div>
+                  <div className=" flex p-3 items-start gap-2 rounded-md border border-white95 w-full">
+                    <div>
+                      <img src="/src/assets/tik button.png" />
+                    </div>
+                    <p className=" text-gray30 text-medium">
+                      Early access to new courses and updates.
+                    </p>
+                  </div>
+                </div>
+                <button className=" py-5 px-6 rounded-b-lg bg-orange50 text-white w-full text-medium font-semibold">
+                  Get Started
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>

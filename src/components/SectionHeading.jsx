@@ -1,6 +1,6 @@
 import WhiteButton from "./WhiteButton";
 
-const SectionHeading = ({ heading, subHeading }) => {
+const SectionHeading = ({ heading, subHeading, btn }) => {
   return (
     <div className=" mt-[3.13rem] flex flex-col gap-5 mb-10">
       <div>
@@ -10,7 +10,7 @@ const SectionHeading = ({ heading, subHeading }) => {
         <p className=" self-stretch text-gray35 text-medium ">{subHeading}</p>
       </div>
       <div>
-        <WhiteButton btn={"View All"} />
+        <WhiteButton btn={btn} />
       </div>
     </div>
   );
