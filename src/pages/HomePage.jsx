@@ -1,11 +1,20 @@
+import { useState } from "react";
 import Navbar from "../components/Navbar";
 import OrangeButton from "../components/OrangeButton";
 import SectionHeading from "../components/SectionHeading";
 import TopOffer from "../components/TopOffer";
 import WhiteButton from "../components/WhiteButton";
-import { benefitData, courses, testimonials } from "../data/homePageData";
+import { benefitData, courses, testimonials, faq } from "../data/homePageData";
+import Footer from "../components/Footer";
 
 const HomePage = () => {
+  const [Faq, setFaq] = useState(null);
+  function toggle(i) {
+    if (Faq === i) {
+      return setFaq(null);
+    }
+    setFaq(i);
+  }
   return (
     <div className="bg-white97 px-4 mx-auto pt-10">
       <div>
@@ -71,7 +80,7 @@ const HomePage = () => {
           subHeading={
             "Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in."
           }
-          btn={'View All'}
+          btn={"View All"}
         />
         <div>
           {benefitData.map((item) => {
@@ -106,7 +115,7 @@ const HomePage = () => {
           subHeading={
             "Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in."
           }
-          btn={'View All'}
+          btn={"View All"}
         />
         <div className=" flex flex-col gap-5">
           {courses.map((item) => {
@@ -154,7 +163,7 @@ const HomePage = () => {
           subHeading={
             "Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in."
           }
-          btn={'View All'}
+          btn={"View All"}
         />
         <div className="flex flex-col gap-5">
           {testimonials.map((item) => {
@@ -368,7 +377,60 @@ const HomePage = () => {
 
       {/* FAQ  */}
 
-      
+      <div>
+        <SectionHeading
+          heading={"Frequently Asked Questions"}
+          subHeading={
+            "Still you have any questions? Contact our Team via support@skillbridge.com"
+          }
+          btn={"See All FAQ’s"}
+        />
+        <div className=" flex flex-col items-start gap-5 self-stretch">
+          {faq.map((item, i) => {
+            return (
+              <div
+                key={item.id}
+                className="flex p-6 flex-col items-start  self-stretch rounded-xl border border-white95 bg-white gap-5"
+              >
+                <div
+                  className=" flex items-center self-stretch gap-7 justify-between  cursor-pointer"
+                  onClick={() => toggle(i)}
+                >
+                  <p className=" text-gray15 font-medium">{item.qus}</p>
+                  <button>
+                    <img
+                      src={`${
+                        Faq !== i
+                          ? "/src/assets/plus button.png"
+                          : "/src/assets/cross button.png"
+                      }`}
+                    />
+                  </button>
+                </div>
+                <div
+                  className={` w-full ${
+                    Faq === i ? "visible" : "hidden"
+                  } border-t border-white95 pt-5`}
+                >
+                  <p className=" self-stretch text-gray30 text-medium mb-5">
+                    {item.ans}
+                  </p>
+                  <div className=" flex py-3 px-5 items-center self-stretch rounded-md border border-white95 bg-white97 justify-between cursor-pointer">
+                    <p className=" text-gray20 text-medium font-medium">
+                      {item.buttonText}
+                    </p>
+                    <button>
+                      <img src="/src/assets/right button.png" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <Footer />
     </div>
   );
 };

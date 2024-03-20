@@ -121,3 +121,36 @@ export const testimonials = [
     description: `I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!`,
   },
 ];
+
+export const faq = [
+  {
+    id: 1,
+    qus: "Can I enroll in multiple courses at once?",
+    ans: "Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.",
+    buttonText: "Enrollment Process for Different Courses",
+  },
+  {
+    id: 2,
+    qus: "What kind of support can I expect from instructors?",
+    ans: "Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.",
+    buttonText: "Enrollment Process for Different Courses",
+  },
+  {
+    id: 3,
+    qus: "Are the courses self-paced or do they have specific start and end dates?",
+    ans: "Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.",
+    buttonText: "Enrollment Process for Different Courses",
+  },
+  {
+    id: 4,
+    qus: "Are there any prerequisites for the courses?",
+    ans: "Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.",
+    buttonText: "Enrollment Process for Different Courses",
+  },
+  {
+    id: 5,
+    qus: "Can I download the course materials for offline access?",
+    ans: "Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.",
+    buttonText: "Enrollment Process for Different Courses",
+  },
+];
