@@ -19,6 +19,16 @@ export const benefitData = [
     heading: "Updated Curriculum",
     para: "Access courses with up-to-date content reflecting the latest trends and industry practices.",
   },
+  {
+    number: "05",
+    heading: "Practical Projects and Assignments",
+    para: "Develop a portfolio showcasing your skills and abilities to potential employers.",
+  },
+  {
+    number: "06",
+    heading: "Interactive Learning Environment",
+    para: "Collaborate with fellow learners, exchanging ideas and feedback to enhance your understanding.",
+  },
 ];
 
 export const courses = [
@@ -51,16 +61,6 @@ export const courses = [
     courseName: "Mobile App Development",
     courseInfo:
       "Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.",
-  },
-  {
-    id: 3,
-    image: "/src/assets/Image1.png",
-    duration: "8 Weeks",
-    level: "Intermediate",
-    author: "David Brown",
-    courseName: "Web Design Fundamentals",
-    courseInfo:
-      "Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.",
   },
   {
     id: 4,

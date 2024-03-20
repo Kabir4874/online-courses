@@ -17,7 +17,7 @@ const Navbar = () => {
   window.addEventListener("scroll", () => {
     if (scrollY > 120) {
       setNav(
-        "bg-white px-4 fixed w-[96%] top-0 rounded-md left-[50%] translate-x-[-50%] shadow-md z-50"
+        "bg-white px-4 fixed w-[96%] lg:w-[88%] top-0 rounded-md left-[50%] translate-x-[-50%] shadow-md z-50"
       );
     } else {
       setNav("");
@@ -25,7 +25,7 @@ const Navbar = () => {
   });
   return (
     <div className={`${nav} transition-all ease-in-out duration-300`}>
-      <div className="flex py-[0.875rem] lg:py-6 lg:px-16 2xl:px-32 justify-between items-center self-stretch relative">
+      <div className="flex py-[0.875rem] lg:py-6  2xl:px-32 justify-between items-center self-stretch relative">
         <div className=" flex items-center gap-12">
           <div className=" w-10 lg:w-14 cursor-pointer">
             <img src="/src/assets/Logo.png" className=" w-full" />
