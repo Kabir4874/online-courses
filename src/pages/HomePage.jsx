@@ -17,48 +17,34 @@ const HomePage = () => {
   }
   const [nav, setNav] = useState("");
   const [topOffer, setTopOffer] = useState("visible");
-  window.addEventListener("scroll", () => {
-    if (scrollY > 60) {
-      setNav(
-        "bg-white px-4 fixed w-[96%] top-0 rounded-md left-[50%] translate-x-[-50%] shadow-md z-50"
-      );
-      setTopOffer("hidden");
-    } else {
-      setNav("");
-      setTopOffer("visible");
-    }
-  });
   return (
     <div className="bg-white97 px-4 mx-auto pt-10">
-      <div className={`${topOffer}`}>
-        <TopOffer />
-      </div>
-      <div className={`${nav} transition-all ease-in-out duration-300`}>
-        <Navbar />
-      </div>
+      <TopOffer />
+
+      <Navbar />
 
       {/* Header  */}
 
-      <div className=" mt-[3.12rem]">
+      <div className=" mt-[3.12rem] lg:px-16">
         <div className=" flex flex-col items-center self-stretch">
           <div className=" flex p-[.875rem] justify-center items-center content-center gap-3 self-stretch flex-wrap rounded-lg border border-white95 bg-white99">
             <div className=" relative">
-              <img src="/src/assets/Icon Container.png" className=" w-12" />
+              <img src="/src/assets/Icon Container.png" className=" w-12 lg:w-16" />
               <img
                 src="/src/assets/Abstract Line.png"
-                className=" absolute -top-5 -left-5"
+                className=" absolute -top-5 -left-5 lg:-top-6 lg:-left-6"
               />
             </div>
-            <h2 className=" font-semibold leading-6 text-gray10">
+            <h2 className=" font-semibold leading-6 text-gray10 lg:text-5xl">
               <span className=" text-orange50">Unlock</span> Your Creative
               Potential
             </h2>
           </div>
           <div className="flex flex-col gap-[.375rem] self-stretch items-center px-7 mt-4">
-            <h1 className=" text-gray15 text-center text-2xl font-medium leading-9">
+            <h1 className=" text-gray15 text-center text-2xl font-medium leading-9 lg:text-4xl">
               with Online Design and Development Courses.
             </h1>
-            <p className=" text-medium text-gray15 text-center leading-6">
+            <p className=" text-medium text-gray15 text-center leading-6 lg:text-lg">
               Learn from Industry Experts and Enhance Your Skills.
             </p>
           </div>
