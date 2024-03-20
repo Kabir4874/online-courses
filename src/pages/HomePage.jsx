@@ -18,7 +18,7 @@ const HomePage = () => {
   const [nav, setNav] = useState("");
   const [topOffer, setTopOffer] = useState("visible");
   return (
-    <div className="bg-white97 px-4 lg:px-16 2xl:px-32 mx-auto pt-10">
+    <div className="bg-white97 px-4 lg:px-16 2xl:px-28 mx-auto pt-10">
       <TopOffer />
 
       <Navbar />
@@ -462,7 +462,9 @@ const HomePage = () => {
                   className=" flex items-center self-stretch gap-7 justify-between  cursor-pointer"
                   onClick={() => toggle(i)}
                 >
-                  <p className=" text-gray15 font-medium">{item.qus}</p>
+                  <p className=" text-gray15 font-medium lg:text-xl">
+                    {item.qus}
+                  </p>
                   <button className=" w-10">
                     <img
                       src={`${
@@ -479,11 +481,11 @@ const HomePage = () => {
                     Faq === i ? "visible" : "hidden"
                   } border-t border-white95 pt-5`}
                 >
-                  <p className=" self-stretch text-gray30 text-medium mb-5">
+                  <p className=" self-stretch text-gray30 text-medium mb-5 lg:text-lg">
                     {item.ans}
                   </p>
                   <div className=" flex py-3 px-5 items-center self-stretch rounded-md border border-white95 bg-white97 justify-between cursor-pointer">
-                    <p className=" text-gray20 text-medium font-medium">
+                    <p className=" text-gray20 text-medium font-medium lg:text-lg">
                       {item.buttonText}
                     </p>
                     <button>
